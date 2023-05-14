@@ -7,6 +7,14 @@ html, body {
   padding: 0px;
   font-family: sans-serif;
 }
+.container{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.title, .subTitle{
+  text-align: center;
+}
 th, td{
   padding: 10px;
 }

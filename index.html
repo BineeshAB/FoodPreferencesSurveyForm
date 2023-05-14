@@ -9,25 +9,25 @@
     </head>
     <body>
         <div class="container" id="container">
-            <h1>
+            <h1 class="title">
                 Food Preferences - Survey Form
             </h1>
-            <h5>
+            <h5 class="subTitle">
                 Please fill the form and submit
             </h5>
             <hr />
-            <form action="#" method="post" id="survey-form">
+            <form action="pages/thankyou.html" method="get" id="survey-form">
                 <table>
                     <tr>
-                        <td><label for="name">Name</label></td>
+                        <td><label for="personName">Name</label></td>
                         <td>
-                            <input type="text" id="name" name="name">
+                            <input type="text" id="personName" name="name" required>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="age">Age</label></td>
                         <td>
-                            <input type="number" id="age" name="age">
+                            <input type="number" id="age" name="age" min="0" max="150" required>
                         </td>
                     </tr>
                     <tr>
@@ -48,7 +48,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <table style="font-size: 0.7em; border: 1px solid">
+                            <table style="border: 1px solid">
                                 <thead>
                                     <th></th>
                                     <th>Every Day</th>
@@ -192,7 +192,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <button>Submit</button>
+                            <button onclick="submitForm()">Submit</button>
                             <button type="reset">Reset</button>
                         </td>
                     </tr>
